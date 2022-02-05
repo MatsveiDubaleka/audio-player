@@ -65,10 +65,11 @@ header, footer {
     background:blueviolet;
     height: 6px;
     border-radius: 5px;
-    width: 150px;
+    /* width: 150px; */
 }
 
 .cover > img {
+    width: 300px;
     border-radius: 20%;
 }
 
@@ -86,13 +87,12 @@ header, footer {
     cursor: pointer;
 }
 
-.btn > img:hover {
+.btn > .active {
     width: 50px;
     filter: invert(73%) sepia(11%) saturate(874%) hue-rotate(7deg) brightness(95%) contrast(87%);
     transition: .5s;
     cursor: pointer;
 }
-
 
 /* Footer */
  
