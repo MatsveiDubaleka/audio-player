@@ -1,6 +1,7 @@
 const player = document.querySelector('.player'),
       playBtn = document.querySelector('.play'),
       prevBtn = document.querySelector('.prev'),
+      wrapper = document.querySelector('.wrapper'),
       nextBtn = document.querySelector('.next'),
       audio = document.querySelector('.audio'), 
       progressContainer = document.querySelector('.progress__container'), 
@@ -10,7 +11,7 @@ const player = document.querySelector('.player'),
       imgSrc = document.querySelector('.img__src')
 
 // Songs
-const songs = ['beyonce', 'dontstartnow']
+const songs = ['lemonade', 'dont start now']
 
 // Песня по умолчанию
 let songIndex = 0;
@@ -18,6 +19,7 @@ let songIndex = 0;
 // Init
 function loadSong(song) {
     title.innerHTML = song.toUpperCase();
+    wrapper.style.backgroundImage = `url(./assets/img/cover${songIndex + 1}.png)`
     audio.src = `./assets/audio/${song}.mp3`
     cover.src = `./assets/img/cover${songIndex + 1}.png`
 }
@@ -98,3 +100,6 @@ function setProgress(e) {
     audio.currentTime = (clickX / width) * duration
 }
 progressContainer.addEventListener('click', setProgress)
+
+// Autoplay
+audio.addEventListener('ended', nextSong)
