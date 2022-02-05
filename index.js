@@ -30,6 +30,7 @@ function playSong () {
     audio.play()
     audio.currentTime = 0;
     imgSrc.src = './assets/svg/pause.png'
+    imgSrc.classList.add('active')
 }
 
 // Pause
@@ -37,6 +38,8 @@ function pauseSong () {
     player.classList.remove('play')
     audio.pause()
     imgSrc.src = './assets/svg/play.png'
+    imgSrc.classList.remove('active')
+
 }
 
 playBtn.addEventListener('click', () => {
@@ -47,3 +50,16 @@ playBtn.addEventListener('click', () => {
         playSong()
     }
 })
+
+// Next Song
+function nextSong () {
+    songIndex++
+
+    if(songIndex > songs.length - 1) {
+        songIndex = 0;
+    }
+
+    loadSong(songs[songIndex])
+    playSong()
+}
+nextBtn.addEventListener('click', nextSong)
