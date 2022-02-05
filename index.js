@@ -17,7 +17,7 @@ let songIndex = 0;
 
 // Init
 function loadSong(song) {
-    title.innerHTML = song;
+    title.innerHTML = song.toUpperCase();
     audio.src = `./assets/audio/${song}.mp3`
     cover.src = `./assets/img/cover${songIndex + 1}.png`
 }
@@ -63,3 +63,28 @@ function nextSong () {
     playSong()
 }
 nextBtn.addEventListener('click', nextSong)
+
+// Prev Song
+function prevSong () {
+    songIndex--;
+
+    if(songIndex < 0) {
+        songIndex =  songs.length - 1;
+    }
+
+    loadSong(songs[songIndex])
+    playSong()
+}
+
+prevBtn.addEventListener('click', prevSong)
+
+// Function Update Progress
+
+function updateProgress(e) {
+    const {duration, currentTime} = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`
+    // console.log(duration);
+    // console.log(currentTime);
+}
+audio.addEventListener('timeupdate', updateProgress)
