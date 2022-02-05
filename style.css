@@ -9,10 +9,44 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: azure;
     font-family: 'Lucida Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    height: 10vh;
+    background-color:snow;
+    border: 2px solid black;
+}
+
+/* Footer */
+ 
+footer > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > a:hover {
+    color: #bdae82;
+    transition: 0.5s;
+}
+
+.rsschool {
+    width: 150px;
+}
+
+.rsschool:hover {
+    filter: invert(73%) sepia(11%) saturate(874%) hue-rotate(7deg) brightness(95%) contrast(87%);
+    transition: 0.7s;
+
 }
