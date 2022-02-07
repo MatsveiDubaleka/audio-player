@@ -13,7 +13,7 @@
     align-items: center;
     background-color: azure;
     background-image: url(./assets/img/cover1.png);
-    background-blend-mode: hard-light;
+    background-blend-mode:luminosity;
     font-family: 'Lucida Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
