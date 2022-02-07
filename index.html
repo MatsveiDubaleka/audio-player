@@ -15,19 +15,10 @@
         </header>
         <main>
             <div class="player">
-                <div class="title">Now Playing</div>
                 <div class="cover">
                     <img class="cover__img" src="./assets/img/cover1.png" alt="Cover">
                 </div>
-                <div class="song">Dont Start Now</div>
-                <audio class="audio" src="./assets/audio/lemonade.mp3"></audio>
-                <div class="time">
-                    <div class="current">0:00</div>
-                    <div class="length"></div>
-                  </div>
-                <div class="progress__container">
-                    <input type="range" value="40" min="0" max="100" step="1" class="progress">
-                </div>
+
                 <div class="buttons">
                     <div class="prev btn">
                         <img src="./assets/svg/backward.png" alt="backward">
@@ -39,6 +30,15 @@
                         <img src="./assets/svg/forward.png" alt="forward">
                     </div>
                 </div>
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="length"></div>
+                  </div>
+                <div class="progress__container">
+                    <input type="range" value="40" min="0" max="100" step="1" class="progress range">
+                </div>  
+                <div class="song">Dont Start Now</div>
+                <audio class="audio" src="./assets/audio/lemonade.mp3"></audio>
             </div>
         </main>
         <footer>
