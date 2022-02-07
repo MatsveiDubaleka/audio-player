@@ -12,7 +12,7 @@ const player = document.querySelector('.player'),
       audioLength = document.querySelector('.length')
 
 // Songs
-const songs = ['lemonade', 'dont start now']
+const songs = ['lemonade - britney spirs', 'dont start now - dua lipa']
 
 // Песня по умолчанию
 let songIndex = 0;
