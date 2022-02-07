@@ -167,3 +167,47 @@ footer > a:hover {
     filter: invert(73%) sepia(11%) saturate(874%) hue-rotate(7deg) brightness(95%) contrast(87%);
     transition: 0.7s;
 }
+
+/* Range */
+
+input[type=range]  {
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: 7px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 7px;
+    background-color: blue;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    background: black;
+    cursor: pointer;
+    width:3px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -4px;
+    box-shadow: -200px  0 0 200px  #bdae82;
+
+  }
+
+  input[type=range]::-moz-range-track {
+      height: 7px;
+      background-color: blue;
+  }
+
+
+ input[type=range]::-moz-range-thumb {
+    background: #ecf0f1;
+    cursor: pointer;
+    height: 7px;
+    border-radius:0px;
+    box-shadow: -200px  0px 0px 200px   #;
+    padding: 0px;
+    margin: 0px;
+  }
