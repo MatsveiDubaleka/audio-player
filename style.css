@@ -207,7 +207,7 @@ input[type=range]  {
     cursor: pointer;
     height: 7px;
     border-radius:0px;
-    box-shadow: -200px  0px 0px 200px   #;
+    box-shadow: -200px  0px 0px 200px;
     padding: 0px;
     margin: 0px;
   }
