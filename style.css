@@ -60,9 +60,10 @@ h1 {
 }
 
 .song {
-    padding: 5% 10% 10% 10%;
+    padding: 0% 10% 15% 10%;
     font-size: 20px;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .progress__container {
