@@ -24,7 +24,7 @@ header, footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0 5%;
+    padding: 2.5% 10%;
     height: 10vh;
     background-color:snow;
     border: 2px solid black;
@@ -93,6 +93,15 @@ header, footer {
     filter: invert(73%) sepia(11%) saturate(874%) hue-rotate(7deg) brightness(95%) contrast(87%);
     transition: .5s;
     cursor: pointer;
+}
+
+/* Time */
+
+.time {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap: 100PX;
 }
 
 /* Footer */
