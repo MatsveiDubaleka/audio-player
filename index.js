@@ -19,7 +19,6 @@ let songIndex = 0;
 
 // Init
 function loadSong(song) {
-    audioLength.innerHTML = getTimeCodeFromNum(audio.duration);
     title.innerHTML = song.toUpperCase();
     wrapper.style.backgroundImage = `url(./assets/img/cover${songIndex + 1}.png)`
     audio.src = `./assets/audio/${song}.mp3`
@@ -28,6 +27,9 @@ function loadSong(song) {
 
 loadSong(songs[songIndex])
 
+audio.addEventListener('loadedmetadata', () => {
+    audioLength.innerHTML = getTimeCodeFromNum(audio.duration);
+})
 // Play
 function playSong () {
     player.classList.add('play')
@@ -97,6 +99,7 @@ function setProgress(e) {
     const clickX = e.offsetX;
     const duration = audio.duration
     audio.currentTime = (clickX / width) * duration
+    progress.value = clickX * duration;
 }
 progressContainer.addEventListener('click', setProgress)
 
