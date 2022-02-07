@@ -47,7 +47,7 @@ h1 {
 
 .player {
     padding: 0 20px;
-    max-width: 380px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,5 +134,4 @@ footer > a:hover {
 .rsschool:hover {
     filter: invert(73%) sepia(11%) saturate(874%) hue-rotate(7deg) brightness(95%) contrast(87%);
     transition: 0.7s;
-
 }
