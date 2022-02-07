@@ -28,12 +28,17 @@ header, footer {
     opacity: 0.5;
     height: 10vh;
     background-color:snow;
+    font-size: 18px;
     border: 2px solid black;
 }
 
 header:hover, footer:hover {
     transition: 0.7s;
     opacity: 0.9;
+}
+
+h1 {
+    font-size: 24px;
 }
 
 /* Main */
